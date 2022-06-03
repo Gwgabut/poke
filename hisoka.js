@@ -559,7 +559,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 ┃⬡ TF - SEND BUKTI - JOIN GRUP
 ┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 ┃⬣〔  GROUP BOT 〕⬣
-┃⬣〔 https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX 〕⬣
+┃⬣〔 https://chat.whatsapp.com/KpS9eHNALBs3mXXJGtzuZE 〕⬣
 ┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 ┃⬣〔*PAYMENT* 〕⬣
 ┃Dana : 0812-3373-8677
@@ -579,7 +579,7 @@ _Bukan Bot_ *_Wibusoft_*👍🏻
             }
             break
             case 'sc': {
-                m.reply('Script : https://github.com/DikaArdnt/Hisoka-Morou\n\n ')
+                m.reply('Script : https://github.com/Wabot2902938/MD')
             }
             break
             case 'chat': {
@@ -1190,28 +1190,24 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    displayText: '𝙶𝚛𝚘𝚞𝚙 𝙱𝚘𝚝🤖',
+                                    url: 'https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX'
                                 }
                             }, {
-                                callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 812-3373-8677'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Status Bot',
-                                    id: 'ping'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Contact Owner',
+                                urlButton: {
+                                    displayText:'T I K T O K'
+                                    
+                                    url: 'http//tiktok.com/@apasih_banh2'
+                                     }
+                                 }, {
+                                     quickReplyButton: {
+                                        displayText: '𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙾𝚠𝚗𝚎𝚛',
                                     id: 'owner'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
+                                    displayText: '𝙼𝚎𝚗𝚞',
+                                    id: 'menu'
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -1229,28 +1225,23 @@ break
 		    await sleep(1500)
 		    let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    displayText: '𝙶𝚛𝚘𝚞𝚙 𝙱𝚘𝚝🤖',
+                                    url: 'https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX'
                                 }
-                            }, {
-                                callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 812-3373-8677'
+                            }, { 
+                                urlButton: {
+                                    displayText: 'T I T O K'
+                                     url: 'http://tiktok.com/@apasih_banh2'
                                 }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Status Bot',
-                                    id: 'ping'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Contact Owner',
+                            }, {        
+                                 quickReplyButton: {
+                                    displayText: '𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙾𝚠𝚗𝚎𝚛',
                                     id: 'owner'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
+                                    displayText: '𝙼𝚎𝚗𝚞',
+                                    id: 'menu'
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -2757,7 +2748,51 @@ let capt = `⭔ Title: ${judul}
             }
             break
             case 'list': case 'menu': case 'help': case '?': {
-                anu = `HanzBotz
+                anu = `*Hai Kak ${m.pushName}*\n\nSaya 𝘽𝙤𝙩 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥, Bot Ini Beta Multi-Device Jika Ada Fitur Error Atau Bug Segera Lapor Develover 𝘽𝙤𝙩
+*Runtime:* _${runtime(process.uptime())}_
+*Tanggal:* _${moment.tz('Asia/Jakarta').format('DD/MM/YY')}_
+*Waktu:* _${moment.tz('Asia/Jakarta').format('HH:mm:ss')}_
+                
+╭─────[ *RULES* ]─────✧
+┴
+│ Dilarang Spam Command
+│ Dilarang Kirim Virtex
+│ Dilarang Spam Menu Ga Jelas
+│ Dilarang Telp / Vc
+│ Dilarang Culik Bot
+│ Dilarang Promosi
+│ Dilarang Chat Owner Ga Jelas
+┬
+╰──────────···
+
+╭─────[ *HUKUM* ]─────✧
+┴
+│ 1 & 10 = Block + banned permanent
+│ 2,4,6 & 8 = Banned sementara
+│ 3 = War
+│ 5 = Block sementara
+│ 9 & 10 = Block permanent
+┬
+╰──────────···
+ ╭─────────────────╮ 
+ │                 HanzBotz
+ │𝙻𝚒𝚋𝚛𝚊𝚛𝚢:  𝙱𝚊𝚒𝚕𝚎𝚢𝚜 - 𝙼𝙳
+ │𝙻𝚊𝚗𝚐𝚞𝚊𝚐𝚎 : 𝙹𝚊𝚟𝚊𝚂𝚌𝚛𝚒𝚙𝚝
+ │𝙿𝚛𝚎𝚏𝚒𝚡 : ( 𝙼𝚞𝚕𝚝𝚒 )
+ │𝙼𝚘𝚍𝚎 :  𝙿𝚞𝚋𝚕𝚒𝚌
+ │𝙿𝚕𝚊𝚝𝚏𝚛𝚘𝚖 :  𝙻𝚒𝚗𝚞𝚡              
+ │─────────────────╯
+ │⭔𝐈𝐧𝐟𝐨 𝐎𝐰𝐧𝐞𝐫
+ │⭔𝙽𝚊𝚖𝚊 : Hanz
+ │⭔𝙽𝚘𝚖𝚘𝚛 : wa.me/6283833342559
+ │─────────────────╯
+ │⭔𝙸𝚗𝚏𝚘 𝙲𝚛𝚎𝚊𝚝𝚘𝚛
+ │⭔𝙽𝚊𝚖𝚊 : 𝐅𝐢𝐤𝐫𝐢𝐢𝐒𝐤𝐲
+ │⭔𝚄𝚖𝚞𝚛 : 17 𝚃𝚊𝚑𝚞𝚗
+ │⭔𝙷𝚘𝚋𝚋𝚢 : 𝙼𝚊𝚕𝚊𝚔 𝙴𝚜𝚌𝚎𝚑
+ │⭔𝚁𝚎𝚐𝚒𝚘𝚗 : 𝙰𝚖𝚎𝚛𝚒𝚔𝚊
+ ╰─────────────────╯
+
 ┌──⭓ *Group Menu*
 │
 │⭔ ${prefix}linkgroup
@@ -2781,7 +2816,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}cekvote
 │⭔ ${prefix}hapusvote
 │
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Webzone Menu*
 │
@@ -2794,7 +2829,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}webtoons
 │⭔ ${prefix}drakor
 │
-└─────⭓
+└───────⭓
 
 
 ┌──⭓ *Downloader Menu*
@@ -2815,7 +2850,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}joox [query]
 │⭔ ${prefix}soundcloud [url]
 │
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Search Menu*
 │
@@ -2830,7 +2865,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}ringtone [query]
 │⭔ ${prefix}stalk [option] [query]
 │
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Random Menu*
 │
@@ -2841,8 +2876,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}bucinquote
 │⭔ ${prefix}katasenja
 │⭔ ${prefix}puisi
-│
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Text Pro Menu*
 │
@@ -2878,7 +2912,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}blackpink
 │⭔ ${prefix}gluetext
 │
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Photo Oxy Menu*
 │
@@ -2895,7 +2929,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}harrypotter
 │⭔ ${prefix}retrolol
 │
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Ephoto Menu*
 │
@@ -2909,7 +2943,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}igcertificate
 │⭔ ${prefix}ytcertificate
 │
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Fun Menu*
 │
@@ -2928,7 +2962,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}math [mode]
 │⭔ ${prefix}suitpvp [@tag]
 │
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Primbon Menu*
 │
@@ -2963,7 +2997,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}zodiak
 │⭔ ${prefix}shio
 │
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Convert Menu*
 │
@@ -2985,7 +3019,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}styletext
 │⭔ ${prefix}smeme
 │
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Main Menu*
 │
@@ -3000,7 +3034,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}listonline
 │⭔ ${prefix}speedtest
 │
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Database Menu*
 │
@@ -3013,7 +3047,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}getmsg
 │⭔ ${prefix}delmsg
 │
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Anonymous Menu*
 │
@@ -3022,7 +3056,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}next
 │⭔ ${prefix}keluar
 │
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Islamic Menu*
 │
@@ -3032,7 +3066,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}juzamma
 │⭔ ${prefix}tafsirsurah
 │
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Voice Changer*
 │
@@ -3048,7 +3082,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}slow
 │⭔ ${prefix}tupai
 │
-└─────⭓
+└───────⭓
 
 ┌──⭓ *Owner Menu*
 │
@@ -3064,31 +3098,27 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}setexif
 │⭔ ${prefix}setmenu [option]
 │
-└─────⭓`
+└───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
-                                }
-                            }, {
-                                urlButton: {
-                                    displayText: 'Grup Bot',
+                                    displayText: '𝙶𝚛𝚘𝚞𝚙 𝙱𝚘𝚝🤖',
                                     url: 'https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX'
                                 }
                             }, {
+                                   urlButton: {
+                                      displayText: 'T I T O K'
+                                    
+                                    url: 'http://tiktok.com/@apasih_banh2'
+                        }             
+                           }, {       
                                 quickReplyButton: {
-                                    displayText: 'Status Bot',
+                                    displayText: 'Ｓｔａｔｕｓ Ｂｏｔ',
                                     id: 'ping'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Contact Owner',
-                                    id: 'owner'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
+                                    displayText: '𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙾𝚠𝚗𝚎𝚛',
+                                    id: 'owner'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
