@@ -1230,7 +1230,7 @@ break
                                 }
                             }, { 
                                 urlButton: {
-                                    displayText: 'T I T O K'
+                                    displayText: 'TIKTOK'
                                      url: 'http://tiktok.com/@apasih_banh2'
                                 }
                             }, {        
@@ -3106,7 +3106,7 @@ let capt = `⭔ Title: ${judul}
                                 }
                             }, {
                                    urlButton: {
-                                      displayText: 'T I T O K'
+                                      displayText: 'TIKTOK'
                                     
                                     url: 'http://tiktok.com/@apasih_banh2'
                         }             
