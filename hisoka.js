@@ -559,7 +559,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 ┃⬡ TF - SEND BUKTI - JOIN GRUP
 ┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 ┃⬣〔  GROUP BOT 〕⬣
-┃⬣〔 https://chat.whatsapp.com/KpS9eHNALBs3mXXJGtzuZE 〕⬣
+┃⬣〔 https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX 〕⬣
 ┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 ┃⬣〔*PAYMENT* 〕⬣
 ┃Dana : 0812-3373-8677
@@ -1194,14 +1194,8 @@ break
                                     url: 'https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX'
                                 }
                             }, {
-                                urlButton: {
-                                    displayText:'T I K T O K'
-                                    
-                                    url: 'http//tiktok.com/@apasih_banh2'
-                                     }
-                                 }, {
-                                     quickReplyButton: {
-                                        displayText: '𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙾𝚠𝚗𝚎𝚛',
+                                quickReplyButton: {
+                                    displayText: '𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙾𝚠𝚗𝚎𝚛',
                                     id: 'owner'
                                 }  
                             }, {
@@ -1228,13 +1222,8 @@ break
                                     displayText: '𝙶𝚛𝚘𝚞𝚙 𝙱𝚘𝚝🤖',
                                     url: 'https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX'
                                 }
-                            }, { 
-                                urlButton: {
-                                    displayText: 'TIKTOK'
-                                     url: 'http://tiktok.com/@apasih_banh2'
-                                }
-                            }, {        
-                                 quickReplyButton: {
+                            }, {
+                                quickReplyButton: {
                                     displayText: '𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙾𝚠𝚗𝚎𝚛',
                                     id: 'owner'
                                 }  
@@ -1614,6 +1603,18 @@ break
                 hisoka.sendMessage(m.chat, { image: { url: result }, caption: '⭔ Media Url : '+result }, { quoted: m })
             }
             break
+                m.reply(mess.wait)
+                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Tch Dasar Sagne Nih😏 ' + command }, { quoted: m })
+            }
+            break
+	    case 'couple': {
+                m.reply(mess.wait)
+                let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
+                let random = anu[Math.floor(Math.random() * anu.length)]
+                hisoka.sendMessage(m.chat, { image: { url: random.male }, caption: `Couple Male` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: random.female }, caption: `Couple Female` }, { quoted: m })
+            }
+	    break
             case 'coffe': case 'kopi': {
             let buttons = [
                     {buttonId: `coffe`, buttonText: {displayText: 'Next Image'}, type: 1}
@@ -2787,10 +2788,9 @@ let capt = `⭔ Title: ${judul}
  │⭔𝙽𝚘𝚖𝚘𝚛 : wa.me/6283833342559
  │─────────────────╯
  │⭔𝙸𝚗𝚏𝚘 𝙲𝚛𝚎𝚊𝚝𝚘𝚛
- │⭔𝙽𝚊𝚖𝚊 : 𝐅𝐢𝐤𝐫𝐢𝐢𝐒𝐤𝐲
- │⭔𝚄𝚖𝚞𝚛 : 17 𝚃𝚊𝚑𝚞𝚗
+ │⭔𝙽𝚊𝚖𝚊 : Hanz
  │⭔𝙷𝚘𝚋𝚋𝚢 : 𝙼𝚊𝚕𝚊𝚔 𝙴𝚜𝚌𝚎𝚑
- │⭔𝚁𝚎𝚐𝚒𝚘𝚗 : 𝙰𝚖𝚎𝚛𝚒𝚔𝚊
+ │⭔𝚁𝚎𝚐𝚒𝚘𝚗 : Mars
  ╰─────────────────╯
 
 ┌──⭓ *Group Menu*
@@ -3105,12 +3105,6 @@ let capt = `⭔ Title: ${judul}
                                     url: 'https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX'
                                 }
                             }, {
-                                   urlButton: {
-                                      displayText: 'TIKTOK'
-                                    
-                                    url: 'http://tiktok.com/@apasih_banh2'
-                        }             
-                           }, {       
                                 quickReplyButton: {
                                     displayText: 'Ｓｔａｔｕｓ Ｂｏｔ',
                                     id: 'ping'
