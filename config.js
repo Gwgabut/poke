@@ -18,7 +18,7 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['6283833342559','6283833342559','6283833342559']
+global.owner = ['6283833342559','6283833342559','6285723865776']
 global.premium = ['6283833342559']
 global.packname = 'Hanz'
 global.author = '-'
