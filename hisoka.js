@@ -140,7 +140,6 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 		setting.status = new Date() * 1
 	    }
 	}
-	    
 	  // Anti Link
         if (db.data.chats[m.chat].antilink) {
         if (budy.match(`chat.whatsapp.com`)) {
@@ -539,7 +538,16 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             }
             break
-	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
+            case 'donasi': {
+            hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/1873d8b78396c99babe8a.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n┏━━━━━━━━━━━━━━⬣
+┃        〔 DONASI BOT  〕
+┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+┃⬣ DANA : 0812-3373-8677
+┃⬡ GOPAY : 0812-3373-8677
+┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰` }, { quoted: m })
+            }
+break	
+	    case 'sewabot': case 'sewa': case 'buypremium': {
                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/e4a1f04996e5630a3c334.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n ┏━━━━━━━━━━━━━━⬣
 ┃        〔 SEWA BOT  〕
 ┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
@@ -562,16 +570,16 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 ┃⬣〔 https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX〕⬣
 ┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 ┃⬣〔*PAYMENT* 〕⬣
-┃Dana : 0812-3373-8677
-┃Ovo : 0812-3373-8677
-┃Pulsa : 0812-3373-8677
+┃Dana : 083833342559
+┃Ovo : 083833342559
+┃Pulsa : 083833342559
 ┃
 ┃Note :
 ┃Jika Sudah Transfer Wajib Kirim
 ┃Bukti Transfer Ke Nomor Di Bawah
 ┃Agar Bisa Cepat Di Proses Langsung
 ┃
-┃Cp : Wa.me/6281233738677 〔OWNER〕
+┃Cp : Wa.me/6283833342559 〔OWNER〕
 ┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 
 _Bukan Bot_ *_Wibusoft_*👍🏻
@@ -579,7 +587,7 @@ _Bukan Bot_ *_Wibusoft_*👍🏻
             }
             break
             case 'sc': {
-                m.reply('Script : nyari sc bg? di yt kan banyak')
+                m.reply('Script : AMBIL SC DI YT AJA,INI SCNYA JELEK ')
             }
             break
             case 'chat': {
@@ -900,6 +908,60 @@ break
             hisoka.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
             }
             break
+            case 'menu': case 'help': {
+            anu = `Hai Kak ${m.pushName}
+Saya 𝙃𝙖𝙣𝙯 𝘽𝙤𝙩 Yang Di Buat Oleh 𝙃𝙖𝙣
+Yang Mempermudahkan Kamu  Kalo Ada Bug / Error Segera Laporkan Ke Develover 𝘽𝙤𝙩
+*Runtime:* _${runtime(process.uptime())}_
+*Tanggal:* _${moment.tz('Asia/Jakarta').format('DD/MM/YY')}_
+*Waktu:* _${moment.tz('Asia/Jakarta').format('HH:mm:ss')}_
+            
+╭────[ *RULES* ]────✧
+┴
+│ Dilarang Spam Command
+│ Dilarang Kirim Virtex
+│ Dilarang Spam Menu Ga Jelas
+│ Dilarang Telp / Vc
+│ Dilarang Chat Owner Ga Jelas
+┬
+╰──────────···`
+                let btn = [{
+                                urlButton: {
+                                    displayText: '𝙶𝚛𝚘𝚞𝚙 𝙱𝚘𝚝',
+                                    url: 'https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX'
+            }
+          },
+          {
+            "quickReplyButton": {
+              "displayText": "Donasi",
+"id": 'donasi'
+            }
+          },
+          {
+            "quickReplyButton": {
+              "displayText": "𝙊𝙬𝙣𝙚𝙧",
+"id": 'owner'
+            }
+          },
+{
+            "quickReplyButton": {
+              "displayText": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙",
+"id": 'command'
+            }
+          }
+        ]
+                         let setbot = db.data.settings[botNumber]
+                        if (setbot.templateImage) {
+                        hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
+                        } else if (setbot.templateGif) {
+                        hisoka.send5ButGif(m.chat, anu, hisoka.user.name, global.visoka, btn)
+                        } else if (setbot.templateVid) {
+                        hisoka.send5ButVid(m.chat, anu, hisoka.user.name, global.visoka, btn)
+                        } else if (setbot.templateMsg) {
+                        hisoka.send5ButMsg(m.chat, anu, hisoka.user.name, btn)
+                        }
+                     }
+            break
 	    case 'style': case 'styletext': {
 	        if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply(mess.endLimit) // respon ketika limit habis
 		db.data.users[m.sender].limit -= 1 // -1 limit
@@ -1092,7 +1154,7 @@ break
 
              }
             }
-            break
+					break   
             case 'editinfo': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
@@ -1190,18 +1252,28 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: '𝙶𝚛𝚘𝚞𝚙 Hanz𝙱𝚘𝚝',
-                                    url: 'https://chat.whatsapp.com/KpS9eHNALBs3mXXJGtzuZE'
+                                    displayText: 'Source Code',
+                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                }
+                            }, {
+                                callButton: {
+                                    displayText: 'Number Phone Owner',
+                                    phoneNumber: '+62 812-3373-8677'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙾𝚠𝚗𝚎𝚛',
+                                    displayText: 'Status Bot',
+                                    id: 'ping'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Contact Owner',
                                     id: 'owner'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: '𝙼𝚎𝚗𝚞',
-                                    id: 'menu'
+                                    displayText: '+ript',
+                                    id: 'sc'
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -1219,18 +1291,28 @@ break
 		    await sleep(1500)
 		    let btn = [{
                                 urlButton: {
-                                    displayText: '𝙶𝚛𝚘𝚞𝚙 Hanz𝙱𝚘𝚝',
-                                    url: 'https://chat.whatsapp.com/KpS9eHNALBs3mXXJGtzuZE'
+                                    displayText: 'Source Code',
+                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                }
+                            }, {
+                                callButton: {
+                                    displayText: 'Number Phone Owner',
+                                    phoneNumber: '+62 812-3373-8677'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙾𝚠𝚗𝚎𝚛',
+                                    displayText: 'Status Bot',
+                                    id: 'ping'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Contact Owner',
                                     id: 'owner'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: '𝙼𝚎𝚗𝚞',
-                                    id: 'menu'
+                                    displayText: 'Script',
+                                    id: 'sc'
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -1603,14 +1685,18 @@ break
                 hisoka.sendMessage(m.chat, { image: { url: result }, caption: '⭔ Media Url : '+result }, { quoted: m })
             }
             break
-            case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': {
-                m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Ni ' + command }, { quoted: m })
-            }
+            case 'nami': case 'copper': case 'naruto':  case 'zoro': case 'ussop': case 'minato': case 'sasuke': case 'sakura':case 'luffy': case 'sanji':  case 'boruto': case 'sarada': case 'mitsuki': case 'orochimaru': case 'tsunade': case 'kakashi': case 'killua': case 'gon': case 'rimuru': case 'sagiri': case 'natsu': case 'tanjirou': case 'nezuko': case 'senku':
+            {
+			try{	
+            let txt = await fetchJson(`https://myselfff.herokuapp.com/docs/anime/${command}`)            
+            hisoka.sendMessage(from, await getBuffer(txt.result.list), MessageType.image, {caption: 'Wibu 👀'  + command }, { quoted: m })            
+            } catch (e) {
+			m.reply('Server error')
+			}}	    	    	
             break
-            case 'megumin': case 'waifus': case 'nekos': case 'trap': case 'hentai': case 'ass': case 'blowjob': {
+            case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'megumin': case 'waifus': case 'nekos': case 'trap': case 'blowjob': {
                 m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Tch Dasar Sagne Nih😏 ' + command }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Generate Random ' + command }, { quoted: m })
             }
             break
 	    case 'couple': {
@@ -2754,51 +2840,8 @@ let capt = `⭔ Title: ${judul}
                 }
             }
             break
-            case 'list': case 'menu': case 'help': case '?': {
-                anu = `*Hai Kak ${m.pushName}*\n\nSaya 𝘽𝙤𝙩 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥, Bot Ini Beta Multi-Device Jika Ada Fitur Error Atau Bug Segera Lapor Develover 𝘽𝙤𝙩
-*Runtime:* _${runtime(process.uptime())}_
-*Tanggal:* _${moment.tz('Asia/Jakarta').format('DD/MM/YY')}_
-*Waktu:* _${moment.tz('Asia/Jakarta').format('HH:mm:ss')}_
-                
-╭─────[ *RULES* ]─────✧
-┴
-│ Dilarang Spam NSFW
-│ Dilarang Kirim Virtex
-│ Dilarang Spam Menu Ga Jelas
-│ Dilarang Telp / Vc
-│ Dilarang Culik Bot
-│ Dilarang Promosi
-│ Dilarang Chat Owner Ga Jelas
-┬
-╰──────────···
-
-╭─────[ *HUKUM* ]─────✧
-┴
-│ 1 & 10 = Block + banned permanent
-│ 2,4,6 & 8 = Banned sementara
-│ 3 = War
-│ 5 = Block sementara
-│ 9 & 10 = Block permanent
-┬
-╰──────────···
- ╭─────────────────╮ 
- │                *_Hanz𝙱𝚘𝚝_*
- │𝙻𝚒𝚋𝚛𝚊𝚛𝚢:  𝙱𝚊𝚒𝚕𝚎𝚢𝚜 - 𝙼𝙳
- │𝙻𝚊𝚗𝚐𝚞𝚊𝚐𝚎 : 𝙹𝚊𝚟𝚊𝚂𝚌𝚛𝚒𝚙𝚝
- │𝙿𝚛𝚎𝚏𝚒𝚡 : ( 𝙼𝚞𝚕𝚝𝚒 )
- │𝙼𝚘𝚍𝚎 :  𝙿𝚞𝚋𝚕𝚒𝚌
- │𝙿𝚕𝚊𝚝𝚏𝚛𝚘𝚖 :  𝙻𝚒𝚗𝚞𝚡              
- │─────────────────╯
- │⭔𝐈𝐧𝐟𝐨 𝐎𝐰𝐧𝐞𝐫
- │⭔𝙽𝚊𝚖𝚊 : *_Hanz_*
- │⭔𝙽𝚘𝚖𝚘𝚛 : wa.me/6283833342559
- │─────────────────╯
- │⭔𝙸𝚗𝚏𝚘 𝙲𝚛𝚎𝚊𝚝𝚘𝚛
- │⭔𝙽𝚊𝚖𝚊 : *Hanz*
- │⭔𝚁𝚎𝚐𝚒𝚘𝚗 : 𝚖𝚊𝚛s
- ╰─────────────────╯
-
-┌──⭓ *Group Menu*
+            case 'command': {
+                anu = `┌─────⭓ *Group Menu*
 │
 │⭔ ${prefix}linkgroup
 │⭔ ${prefix}ephemeral [option]
@@ -2873,7 +2916,6 @@ let capt = `⭔ Title: ${judul}
 └───────⭓
 
 ┌──⭓ *Random Menu*
-│
 │⭔ ${prefix}coffe
 │⭔ ${prefix}quotesanime
 │⭔ ${prefix}motivasi
@@ -2881,7 +2923,9 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}bucinquote
 │⭔ ${prefix}katasenja
 │⭔ ${prefix}puisi
-│⭔ ${prefix}couple
+│⭔ ${prefix}maid
+│⭔ ${prefix}kitagawa
+│⭔ ${prefix}uniform
 └───────⭓
 
 ┌──⭓ *Text Pro Menu*
@@ -3104,24 +3148,27 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}setexif
 │⭔ ${prefix}setmenu [option]
 │
-│    *_Hanz𝙱𝚘𝚝_*
-└──────────⭓`
+│©𝙃𝙖𝙣𝙯 𝘽𝙤𝙩
+└────────────────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: '𝙶𝚛𝚘𝚞𝚙 Hanz𝙱𝚘𝚝',
-                                    url: 'https://chat.whatsapp.com/KpS9eHNALBs3mXXJGtzuZE'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Ｓｔａｔｕｓ Ｂｏｔ',
-                                    id: 'ping'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙾𝚠𝚗𝚎𝚛',
-                                    id: 'owner'
-                                }
-                            }]
+                                    displayText: '𝙶𝚛𝚘𝚞𝚙 𝙱𝚘𝚝',
+                                    url: 'https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX'
+            }
+          },
+          {
+            "quickReplyButton": {
+              "displayText": "𝙊𝙬𝙣𝙚𝙧",
+"id": 'owner'
+            }
+          },
+{
+            "quickReplyButton": {
+              "displayText": "𝘿𝙤𝙣𝙖𝙨𝙞",
+"id": 'donasi'
+            }
+          }
+        ]
                          let setbot = db.data.settings[botNumber]
                         if (setbot.templateImage) {
                         hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
