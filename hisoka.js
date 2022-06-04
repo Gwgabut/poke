@@ -579,7 +579,7 @@ _Bukan Bot_ *_Wibusoft_*👍🏻
             }
             break
             case 'sc': {
-                m.reply('Script : https://github.com/Wabot2902938/MD')
+                m.reply('Script : nyari sc bg? di yt kan banyak')
             }
             break
             case 'chat': {
