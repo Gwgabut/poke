@@ -559,7 +559,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 ┃⬡ TF - SEND BUKTI - JOIN GRUP
 ┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 ┃⬣〔  GROUP BOT 〕⬣
-┃⬣〔 https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX 〕⬣
+┃⬣〔 https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX〕⬣
 ┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 ┃⬣〔*PAYMENT* 〕⬣
 ┃Dana : 0812-3373-8677
@@ -1190,8 +1190,8 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: '𝙶𝚛𝚘𝚞𝚙 𝙱𝚘𝚝🤖',
-                                    url: 'https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX'
+                                    displayText: '𝙶𝚛𝚘𝚞𝚙 Hanz𝙱𝚘𝚝',
+                                    url: 'https://chat.whatsapp.com/KpS9eHNALBs3mXXJGtzuZE'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1219,8 +1219,8 @@ break
 		    await sleep(1500)
 		    let btn = [{
                                 urlButton: {
-                                    displayText: '𝙶𝚛𝚘𝚞𝚙 𝙱𝚘𝚝🤖',
-                                    url: 'https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX'
+                                    displayText: '𝙶𝚛𝚘𝚞𝚙 Hanz𝙱𝚘𝚝',
+                                    url: 'https://chat.whatsapp.com/KpS9eHNALBs3mXXJGtzuZE'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1603,6 +1603,12 @@ break
                 hisoka.sendMessage(m.chat, { image: { url: result }, caption: '⭔ Media Url : '+result }, { quoted: m })
             }
             break
+            case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': {
+                m.reply(mess.wait)
+                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Ni ' + command }, { quoted: m })
+            }
+            break
+            case 'megumin': case 'waifus': case 'nekos': case 'trap': case 'hentai': case 'ass': case 'blowjob': {
                 m.reply(mess.wait)
                 hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Tch Dasar Sagne Nih😏 ' + command }, { quoted: m })
             }
@@ -2756,7 +2762,7 @@ let capt = `⭔ Title: ${judul}
                 
 ╭─────[ *RULES* ]─────✧
 ┴
-│ Dilarang Spam Command
+│ Dilarang Spam NSFW
 │ Dilarang Kirim Virtex
 │ Dilarang Spam Menu Ga Jelas
 │ Dilarang Telp / Vc
@@ -2776,7 +2782,7 @@ let capt = `⭔ Title: ${judul}
 ┬
 ╰──────────···
  ╭─────────────────╮ 
- │                 HanzBotz
+ │                *_Hanz𝙱𝚘𝚝_*
  │𝙻𝚒𝚋𝚛𝚊𝚛𝚢:  𝙱𝚊𝚒𝚕𝚎𝚢𝚜 - 𝙼𝙳
  │𝙻𝚊𝚗𝚐𝚞𝚊𝚐𝚎 : 𝙹𝚊𝚟𝚊𝚂𝚌𝚛𝚒𝚙𝚝
  │𝙿𝚛𝚎𝚏𝚒𝚡 : ( 𝙼𝚞𝚕𝚝𝚒 )
@@ -2784,13 +2790,12 @@ let capt = `⭔ Title: ${judul}
  │𝙿𝚕𝚊𝚝𝚏𝚛𝚘𝚖 :  𝙻𝚒𝚗𝚞𝚡              
  │─────────────────╯
  │⭔𝐈𝐧𝐟𝐨 𝐎𝐰𝐧𝐞𝐫
- │⭔𝙽𝚊𝚖𝚊 : Hanz
+ │⭔𝙽𝚊𝚖𝚊 : *_Hanz_*
  │⭔𝙽𝚘𝚖𝚘𝚛 : wa.me/6283833342559
  │─────────────────╯
  │⭔𝙸𝚗𝚏𝚘 𝙲𝚛𝚎𝚊𝚝𝚘𝚛
- │⭔𝙽𝚊𝚖𝚊 : Hanz
- │⭔𝙷𝚘𝚋𝚋𝚢 : 𝙼𝚊𝚕𝚊𝚔 𝙴𝚜𝚌𝚎𝚑
- │⭔𝚁𝚎𝚐𝚒𝚘𝚗 : Mars
+ │⭔𝙽𝚊𝚖𝚊 : *Hanz*
+ │⭔𝚁𝚎𝚐𝚒𝚘𝚗 : 𝚖𝚊𝚛s
  ╰─────────────────╯
 
 ┌──⭓ *Group Menu*
@@ -2876,6 +2881,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}bucinquote
 │⭔ ${prefix}katasenja
 │⭔ ${prefix}puisi
+│⭔ ${prefix}couple
 └───────⭓
 
 ┌──⭓ *Text Pro Menu*
@@ -3098,11 +3104,12 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}setexif
 │⭔ ${prefix}setmenu [option]
 │
-└───────⭓`
+│    *_Hanz𝙱𝚘𝚝_*
+└──────────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: '𝙶𝚛𝚘𝚞𝚙 𝙱𝚘𝚝🤖',
-                                    url: 'https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX'
+                                    displayText: '𝙶𝚛𝚘𝚞𝚙 Hanz𝙱𝚘𝚝',
+                                    url: 'https://chat.whatsapp.com/KpS9eHNALBs3mXXJGtzuZE'
                                 }
                             }, {
                                 quickReplyButton: {
