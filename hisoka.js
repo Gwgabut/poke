@@ -542,8 +542,8 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/1873d8b78396c99babe8a.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n┏━━━━━━━━━━━━━━⬣
 ┃        〔 DONASI BOT  〕
 ┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-┃⬣ DANA : 0812-3373-8677
-┃⬡ GOPAY : 0812-3373-8677
+┃⬣ DANA : 083833342559
+┃⬡ GOPAY : -
 ┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰` }, { quoted: m })
             }
 break	
@@ -587,7 +587,7 @@ _Bukan Bot_ *_Wibusoft_*👍🏻
             }
             break
             case 'sc': {
-                m.reply('Script : AMBIL SC DI YT AJA,INI SCNYA JELEK ')
+                m.reply('Script : AMBIL SC DI YT AJA YA :V ')
             }
             break
             case 'chat': {
@@ -1252,13 +1252,13 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    displayText: '𝙶𝚛𝚘𝚞𝚙 𝙱𝚘𝚝',
+                                    url: 'https://chat.whatsapp.com/F4FdH4g1siEE8qhpOCKCeX'
                                 }
                             }, {
-                                callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 812-3373-8677'
+                                urlButton: {
+                                    displayText: 'TIKTOK CREATOR',
+                                    url: 'https://tiktok.com/@apasih_banh2'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1272,7 +1272,7 @@ break
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: '+ript',
+                                    displayText: 'script',
                                     id: 'sc'
                                 }
                             }]
